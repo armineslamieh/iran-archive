@@ -1,0 +1,47 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client"
+    output   = "./generated/prisma/client"
+}
+
+model Person {
+  id        Int   @id @default(autoincrement())
+  name      String
+  lastName  String
+  age       Int?
+  picture   String?  // URL to image
+  date      DateTime // date of death or incident
+  createdAt DateTime @default(now())
+}
+
+model News {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  picture     String?
+  date        DateTime
+  isCrime     Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
+
+model Archive {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  picture     String?
+  createdAt   DateTime @default(now())
+}
+
+model SiteInfo {
+  id                       Int      @id @default(1)
+  leaderName               String?
+  leaderDescription        String?
+  afterRevolutionPlan      String?
+  aboutWebsite             String?
+  newGovernmentInformation String?
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
+}
