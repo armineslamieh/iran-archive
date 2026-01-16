@@ -13,10 +13,6 @@ export default function AboutMePage() {
             </header>
 
             <section className="space-y-3 text-sm md:text-base leading-relaxed text-white flex justify-center items-center gap-7">
-
-                    <Image src="https://image2url.com/r2/default/images/1768516867265-b86dbccf-3b9f-4e31-b362-e2f3f1e3b2c9.jpeg"
-                           alt="Me" width={200} height={200}
-                           className="rounded-2xl"/>
                 <div className="flex-1 backdrop-blur-2xl border-transparent rounded-3xl p-5 gap-3">
                 <p>
                     {/* Replace this with your real story */}
