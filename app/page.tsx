@@ -245,7 +245,7 @@ export default async function HomePage() {
             {/* Latest archive entries */}
             <section className="mt-10 space-y-3 mb-8">
                 <div className="flex items-center justify-between">
-                    <h2 className="text-xl font-semibold">Recent archive entries</h2>
+                    <h2 className="text-xl font-semibold">Recent crimes archive </h2>
                     <Link
                         href="/archive"
                         className="text-xs text-white underline underline-offset-4"
