@@ -290,10 +290,6 @@ export default function AdminNewsPage() {
                                         </div>
                                     )}
 
-                                    <p className="text-xs text-gray-100 line-clamp-3">
-                                        {n.description}
-                                    </p>
-
                                     <div className="flex justify-end gap-2 pt-1">
                                         <button
                                             type="button"

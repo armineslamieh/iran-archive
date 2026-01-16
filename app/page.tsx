@@ -44,7 +44,7 @@ export default async function HomePage() {
             {/* Hero / Title */}
             <section className="space-y-4 flex flex-col items-center">
                 <h1 className="text-3xl md:text-4xl font-bold">
-                    Archive of Crimes of the <strong className="text-red-700">Islamic Republic</strong>
+                    Archive of Crimes of the <strong className="text-red-700">Islamic Republic</strong> and the <strong className="text-green-400">Iranian people</strong> Revolution against dictatorship.
                 </h1>
                 <p className="text-sm md:text-base text-white font-bold leading-relaxed">
                     This website documents the people killed, daily events about the current revolution, and systematic
@@ -125,7 +125,7 @@ export default async function HomePage() {
                     <h2 className="font-semibold text-sm text-white">
                         People killed by the Islamic Republic
                     </h2>
-                    <p className="text-3xl font-bold text-white"><strong className="text-red-700">+12,000</strong> innocent <strong className="text-green-400">iranian individuals</strong></p>
+                    <p className="text-3xl font-bold text-white"><strong className="text-red-700">+12,000</strong> innocent <strong className="text-red-700">iranian individuals</strong></p>
                     <p className="text-xs text-white">
                         This number is official and these young unarmed people have been killed only in two days.
                     </p>
@@ -260,11 +260,20 @@ export default async function HomePage() {
                 ) : (
                     <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                         {latestCrimeNews.map((item) => (
-                            <li key={item.id}>
+                            <li key={item.id} className="border border-white/40 rounded-3xl p-3 bg-white/5 backdrop-blur flex flex-col gap-2">
                                 <Link
                                     href={`/archive/${item.id}`}
-                                    className="block border border-white/40 rounded-3xl p-3 text-sm bg-white/5 backdrop-blur hover:bg-white/10 transition"
+                                    className="block border border-white/40 rounded-3xl p-3 text-sm space-y-1 bg-white/5 backdrop-blur hover:bg-white/10 transition"
                                 >
+                                    {item.picture && (
+                                        <div className="rounded-2xl overflow-hidden">
+                                            <img
+                                                src={item.picture}
+                                                alt={item.title}
+                                                className="w-full aspect-[4/3] object-cover"
+                                            />
+                                        </div>
+                                    )}
                                     <p className="font-semibold mb-1">{item.title}</p>
                                     <p className="text-xs text-white mb-1">
                                         {item.date.toISOString().slice(0, 10)}

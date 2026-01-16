@@ -10,7 +10,6 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                 <nav className="space-x-4 text-sm">
                     <Link href="/admin/warriors">Warriors</Link>
                     <Link href="/admin/news">News</Link>
-                    <Link href="/">Public site</Link>
                 </nav>
             </header>
             {children}

@@ -69,9 +69,6 @@ export default async function ArchivePage() {
                                         {item.date.toISOString().slice(0, 10)}
                                     </p>
 
-                                    <p className="text-sm text-gray-100 whitespace-pre-line leading-relaxed">
-                                        {item.description}
-                                    </p>
                                 </div>
                                     </Link>
                             </li>
