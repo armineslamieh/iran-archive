@@ -25,7 +25,7 @@ export default function AboutMePage() {
                     or disappeared. This project is not neutral: it stands with the people
                     of Iran and against oppression.
                     If you have corrections, new information, or you want to contribute,
-                    you can reach me through this E-mail: eslamieh.armin@gmail.com
+                    you can reach me through this E-mail: iranrevolutionarchive2026@gmail.com
                 </p>
                 </div>
             </section>
