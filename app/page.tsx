@@ -14,12 +14,12 @@ export default async function HomePage() {
     // Load data in parallel
     const [latestWarriors, latestNews, latestCrimeNews, warriorCount] =
         await Promise.all([
-            prisma.person.findMany({ orderBy: { date: 'desc' }, take: 5 }),
-            prisma.news.findMany({ orderBy: { date: 'desc' }, take: 5 }),
+            prisma.person.findMany({ orderBy: { date: 'desc' }, take: 9 }),
+            prisma.news.findMany({ orderBy: { date: 'desc' }, take: 9 }),
             prisma.news.findMany({
                 where: { isCrime: true },
                 orderBy: { date: 'desc' },
-                take: 5,
+                take: 9,
             }),
             prisma.person.count(),
         ])
@@ -205,7 +205,7 @@ export default async function HomePage() {
                         No news added yet. Use the admin panel to add daily updates.
                     </p>
                 ) : (
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-4">
                         {latestNews.map((n) => (
                             <li
                                 key={n.id}
