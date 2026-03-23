@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Iran Archive Platform
+
+A web platform built to document and organize public information related to recent developments in Iran.
+
+The project presents archived records, structured content, and time-sensitive updates in a clear and accessible interface. It was designed as a content-driven platform with a strong focus on usability, visual communication, and scalable information presentation.
+
+## Features
+
+- Public-facing information platform
+- Structured archive pages
+- News and update sections
+- Content-focused responsive UI
+- Live deployment
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Prisma
+- Vercel
+
+## Live Demo
+
+[View live site](https://iranrevolutionarchive.com)
 
 ## Getting Started
 
-First, run the development server:
 
-```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+What I Learned:
+Building a production-style web app with Next.js
+Structuring content-heavy interfaces
+Designing for clarity and readability
+Deploying and maintaining a live web project
+Organizing dynamic content in a scalable way
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Future Improvements:
+Add search and filtering
+Improve content moderation workflow
+Add multilingual support
+Improve content management and admin tooling
