@@ -28,7 +28,7 @@ export default function RootLayout({
         <img
             src="https://media.licdn.com/dms/image/v2/D4E12AQGUGxtEzPkk6g/article-cover_image-shrink_720_1280/B4EZu4xfsmKQAM-/0/1768331543990?e=2147483647&v=beta&t=QzLvrN4Tg9-wJbxQLuaFyrBcPE1HX3M2mqw9eMIwbBY"
             alt="background"
-            className="fixed inset-0 w-full h-full object-contain -z-10 blur-xs"
+            className="fixed inset-0 w-full h-full object-cover -z-10 blur-xs"
         />
 
         {/* Page content */}
