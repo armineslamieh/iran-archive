@@ -126,7 +126,7 @@ export default async function HomePage() {
                     <h2 className="font-semibold text-sm text-white">
                         People killed by the Islamic Republic
                     </h2>
-                    <p className="text-3xl font-bold text-white"><strong className="text-red-700">+12,000</strong> innocent <strong className="text-red-700">iranian individuals</strong></p>
+                    <p className="text-3xl font-bold text-white"><strong className="text-red-700">+35,000</strong> innocent <strong className="text-red-700">iranian individuals</strong></p>
                     <p className="text-xs text-white">
                         This number is official and these young unarmed people have been killed only in two days.
                     </p>
