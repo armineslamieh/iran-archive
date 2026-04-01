@@ -107,7 +107,7 @@ export default async function HomePage() {
                 <div className="border rounded-xl p-4 space-y-1 backdrop-blur hover:scale-105 transition-transform">
                     <Link href="https://irinter.net/?utm_source=chatgpt.com">
                     <h2 className="font-semibold text-sm text-white">
-                        Days since internet shutdown
+                        Days since internet shutdown (AGAIN)
                     </h2>
                     <p className="text-3xl font-bold">
                         {daysSinceShutdown !== null ? daysSinceShutdown : '—'}
